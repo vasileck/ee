@@ -98,6 +98,7 @@ div {
   width: 85%;
   padding: 1rem;
   border: 2px solid #6495ED;
+  border-radius-left:5px;
   display: inline-block;
   box-sizing: border-box;
   font-size: 1rem;
@@ -109,8 +110,17 @@ div {
   display: inline-block;
   color: #fff;
   background-color: #6495ED;
-  padding: .80rem;
+  padding: .1rem;
   font-size: 1.3rem;
-  border: white solid 2px;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+
+}
+.icon{
+  font-size:30px;
+}
+.two {
+
 
 }

@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { faCoffee } from '@fortawesome/free-solid-svg-icons';
+import { faPlus } from '@fortawesome/free-solid-svg-icons';
+import { faTrashAlt } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-root',
@@ -31,5 +32,7 @@ export class AppComponent {
       done: false
     });
   }
-  faCoffee = faCoffee;
+  faCoffee = faPlus;
+  trash = faTrashAlt;
 }
+
