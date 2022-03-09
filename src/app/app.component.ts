@@ -9,6 +9,11 @@ import { faTrashAlt } from '@fortawesome/free-solid-svg-icons';
 })
 
 export class AppComponent {
+  @Component({
+    selector: 'app-item',
+    templateUrl: './item.component.html',
+    styleUrls: ['./item.component.css']
+  })
   title = 'todo';
 
   filter: 'all' | 'active' | 'done' = 'all';
@@ -34,5 +39,8 @@ export class AppComponent {
   }
   faCoffee = faPlus;
   trash = faTrashAlt;
+  remove(item:any) {
+    this.allItems.splice(this.allItems.indexOf(item), 1);
+  }
 }
 
