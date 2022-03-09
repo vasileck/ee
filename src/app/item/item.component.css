@@ -1,69 +1,51 @@
 .item {
   padding: .5rem 0 .75rem 0;
-  text-align: left;
   font-size: 1.2rem;
-}
 
+}
 
 .btn-wrapper {
   margin-top: 1rem;
   margin-bottom: .5rem;
-}
-
-.btn {
-  /* flexbox стили для кнопок меню */
-  flex-basis: 49%;
+  margin-left: auto;
+  display:inline-flex;
 }
 
 .btn-save {
-  background-color: #000;
-  color: #fff;
-  border-color: #000;
+  background-color: rgba(24,40,162,0.81);
+  color: white;
+  border-color: rgba(30,29,162,0.81);
 
 }
-
 .btn-save:hover {
-  background-color: #444242;
+  background-color: rgba(41,56,162,0.45);
 }
-
 .btn-save:focus {
-  background-color: #fff;
-  color: #000;
+  background-color: rgba(41,56,162,0.45);
+  color: rgba(12,6,162,0.81);
 }
-
 .checkbox-wrapper {
   margin: .5rem 0;
 }
-
 .btn-warn {
-  background-color: #b90000;
+  background-color: rgba(70,98,162,0.81);
   color: #fff;
-  border-color: #9a0000;
-}
+  border-color: rgba(70,98,162,0.81);
 
+}
 .btn-warn:hover {
-  background-color: #9a0000;
+  background-color: rgba(77,122,162,0.81) ;
 }
-
-.btn-warn:active {
-  background-color: #e30000;
-  border-color: #000;
-}
-
 .sm-text-input {
   width: 100%;
   padding: .5rem;
-  border: 2px solid #555;
+  border: 2px solid #344e7e;
   display: block;
   box-sizing: border-box;
+  border-radius: 5px;
   font-size: 1rem;
   margin: 1rem 0;
 }
-
-/* Пользовательские чекбоксы
-Адаптировано из https://css-tricks.com/the-checkbox-hack/#custom-designed-radio-buttons-and-checkboxes */
-
-/* Основа для стилизации лэйбла */
 [type="checkbox"]:not(:checked),
 [type="checkbox"]:checked {
   position: absolute;
@@ -75,7 +57,6 @@
   padding-left: 1.95em;
   cursor: pointer;
 }
-
 /* чекбокс */
 [type="checkbox"]:not(:checked) + label:before,
 [type="checkbox"]:checked + label:before {
@@ -86,7 +67,6 @@
   border: 2px solid #ccc;
   background: #fff;
 }
-
 /* галочка для чекбокса */
 [type="checkbox"]:not(:checked) + label:after,
 [type="checkbox"]:checked + label:after {
@@ -108,9 +88,9 @@
   opacity: 1;
   transform: scale(1);
 }
-
 /* доступность */
 [type="checkbox"]:checked:focus + label:before,
 [type="checkbox"]:not(:checked):focus + label:before {
   border: 2px dotted blue;
 }
+
